@@ -1,6 +1,6 @@
-# Uncharted-ajax
+# Uncharted Ajax
 
-This README outlines the details of collaborating on this Ember addon.
+This is an extremely simple wrapper around [jQuery's ajax](http://api.jquery.com/jquery.ajax/) method which makes working with it testable in an Ember environment. Comparable to [ic-ajax](https://github.com/instructure/ic-ajax).
 
 ## Installation
 
