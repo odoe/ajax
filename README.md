@@ -1,4 +1,4 @@
-# Uncharted Ajax
+# UnchartedCode Ajax
 
 This is an extremely simple wrapper around [jQuery's ajax](http://api.jquery.com/jquery.ajax/) method which makes working with it testable in an Ember environment. Comparable to [ic-ajax](https://github.com/instructure/ic-ajax).
 
