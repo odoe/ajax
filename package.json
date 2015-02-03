@@ -1,7 +1,7 @@
 {
-  "name": "uncharted-ajax",
+  "name": "ember-cli-uncharted-ajax",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "jQuery ajax wrapper for use with Ember.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
