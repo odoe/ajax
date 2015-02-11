@@ -1,4 +1,4 @@
-# UnchartedCode Ajax
+# UnchartedCode Ajax [![Build Status][travis-badge]][travis-badge-url]
 
 This is an extremely simple wrapper around [jQuery's ajax](http://api.jquery.com/jquery.ajax/) method which makes working with it testable in an Ember environment. Comparable to [ic-ajax](https://github.com/instructure/ic-ajax).
 
@@ -50,3 +50,6 @@ UnchartedAjax(
 * `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+[travis-badge]: https://travis-ci.org/unchartedcode/ajax.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/unchartedcode/ajax
