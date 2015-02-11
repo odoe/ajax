@@ -6,7 +6,7 @@ export default function ajax(hash) {
       Ember.run(null, resolve, json);
     };
 
-    hash.error = function(jqXHR, textStatus, errorThrown) {
+    hash.error = function(jqXHR/*, textStatus, errorThrown*/) {
       Ember.run(null, reject, jqXHR);
     };
 
