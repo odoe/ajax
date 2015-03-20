@@ -1,15 +1,23 @@
 import Ember from 'ember';
 
-export default function ajax(hash) {
+export default function ajax(url, options) {
   return new Ember.RSVP.Promise(function(resolve, reject) {
-    hash.success = function(json) {
+    if (typeof url === 'object') {
+      options = url;
+    }
+    else {
+      options = options || {};
+      options.url = url;
+    }
+    
+    options.success = function(json) {
       Ember.run(null, resolve, json);
     };
 
-    hash.error = function(jqXHR/*, textStatus, errorThrown*/) {
+    options.error = function(jqXHR/*, textStatus, errorThrown*/) {
       Ember.run(null, reject, jqXHR);
     };
 
-    Ember.$.ajax(hash);
+    Ember.$.ajax(options);
   });
 }
