@@ -21,10 +21,19 @@ import UnchartedAjax from 'uncharted-ajax';
 and then use it in your code.
 
 ```javascript
-UnchartedAjax(
-  url: "https://api.somedomain.com/user"
+// Url only, defaults to GET
+UnchartedAjax("https://api.somedomain.com/users")
+
+// Url and Options
+UnchartedAjax("https://api.somedomain.com/user", {
   method: "POST"
-)
+})
+
+// Options all the way
+UnchartedAjax({
+  url: "https://api.somedomain.com/user",
+  method: "POST"
+})
 ```
 
 ## Development
